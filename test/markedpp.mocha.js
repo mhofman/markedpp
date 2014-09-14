@@ -196,6 +196,14 @@ describe ('parser', function() {
 		u.run('parser.md', done);
 	});
 
+	it ('parse inline text', function(done){
+		u.run('parser_inlinetext.md', done);
+	});
+
+	it ('parse paragraphs', function(done){
+		u.run('parser_paragraph.md', done);
+	});
+
 	it ('autonumber lists', function(done){
 		u.run('parser_lists.md', done);
 	});
